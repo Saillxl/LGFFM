@@ -67,7 +67,35 @@ pip install -r requirements.txt
 1. Download pre-trained weights from the official (not 2.1) [SAM2 large repository](https://github.com/facebookresearch/sam2?tab=readme-ov-file). Place the weights in the "checkpoints" folder. If you want to place it elsewhere, modify the parameter hiera_path in train.py.
 2. Run train.py
 ```
-python train
+python train.py --hiera_path './checkpoints/sam2_hiera_large.pt' --train_image_path 'data/BUSI/train/img.yaml' --train_mask_path 'data/BUSI/train/ann.yaml' --save_path 'output/BUSI' 
 ```
 
 ## 🧪 Testing
+Run test.py
+```
+python test.py --checkpoint 'output/BUSI/SAM2-UNet-70.pth' --test_image_path 'data/BUSI/test/img.yaml' --test_gt_path 'data/BUSI/test/ann.yaml' --save_path 'output/'
+```
+
+## 📌 Citation
+If you find this repository useful, please cite our paper:
+```
+bibtex
+@ARTICLE{11129883,
+  author={Luo, Xiling and Wang, Yi and Ou-Yang, Le},
+  journal={IEEE Transactions on Medical Imaging}, 
+  title={LGFFM: A Localized and Globalized Frequency Fusion Model for Ultrasound Image Segmentation}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Image segmentation;Ultrasonic imaging;Feature extraction;Frequency-domain analysis;Transformers;Training;Lesions;Data mining;Image edge detection;Faces;Neural network;ultrasound image segmentation;parallel bi-encoder;multi-domain fusion},
+  doi={10.1109/TMI.2025.3600327}}
+```
+
+## 🙏 Acknowledgement
+[Segment Anything 2 (SAM2)](https://github.com/facebookresearch/sam2)
+
+[SAM2UNet](https://github.com/WZH0120/SAM2-UNet)
+
+Public ultrasound datasets (e.g., BUSI)
+##
