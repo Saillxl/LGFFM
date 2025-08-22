@@ -32,11 +32,15 @@ We evaluate LGFFM on **eight public ultrasound datasets across four categories**
 ```bash
 git clone https://github.com/Saillxl/LGFFM.git
 cd LGFFM/
+```
+
+---
 
 ## 📑 Dataset Preparation
 
-The dataset should follow the format below.
+The dataset should follow the format below. 
 
+```
 **Example: BUSI dataset**
 BUSI/
 ├─ img.yaml─ - /data/project/BUSI/img_dir/malignant (17).png
@@ -45,3 +49,25 @@ BUSI/
 ├─ ann.yaml─ - /data/project/BUSI/ann_dir/malignant (17).png
 |            - /data/project/BUSI/ann_dir/benign (42).png 
 |            - /data/project/BUSI/ann_dir/malignant (109).png 
+```
+⚠️Note: Masks are binary (0 and 1).
+
+---
+
+## ⚙️ Requirements
+We recommend creating a clean environment:
+
+```
+conda create -n LGFFM python=3.10
+conda activate LGFFM
+pip install -r requirements.txt
+```
+
+## 🚀 Training
+1. Download pre-trained weights from the official [SAM2 large repository](https://ieeexplore.ieee.org/document/11129883). Place the weights in the "checkpoints" folder. If you want to place it elsewhere, modify the parameter hiera_path in train.py.
+2. Run train.py
+```
+python train
+```
+
+## 🧪 Testing
