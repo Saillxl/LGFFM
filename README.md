@@ -11,7 +11,7 @@
 
 ## 📖 Introduction
 
-![framework](./assets/framework.png)
+![framework](./LGFFM/framework.png)
 
 Accurate segmentation of ultrasound images plays a critical role in disease screening and diagnosis. Recently, neural network-based methods have shown great promise, but still face challenges due to the inherent characteristics of ultrasound images—such as **low resolution, speckle noise, and artifacts**.
 
