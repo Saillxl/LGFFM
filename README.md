@@ -64,7 +64,7 @@ pip install -r requirements.txt
 ```
 
 ## 🚀 Training
-1. Download pre-trained weights from the official [SAM2 large repository](https://ieeexplore.ieee.org/document/11129883). Place the weights in the "checkpoints" folder. If you want to place it elsewhere, modify the parameter hiera_path in train.py.
+1. Download pre-trained weights from the official (not 2.1) [SAM2 large repository](https://github.com/facebookresearch/sam2?tab=readme-ov-file). Place the weights in the "checkpoints" folder. If you want to place it elsewhere, modify the parameter hiera_path in train.py.
 2. Run train.py
 ```
 python train
