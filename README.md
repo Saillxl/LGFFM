@@ -50,8 +50,18 @@ BUSI/
 |            - /data/project/BUSI/ann_dir/benign (42).png 
 |            - /data/project/BUSI/ann_dir/malignant (109).png 
 ```
-⚠️Note: Masks are binary (0 and 1).
+⚠️Note: Masks are binary (0 and 1). The datasets used in the paper are as follows：
 
+| Body Part   | Dataset    | Download Link                                                                                                 |
+|-------------|------------|-----------------------------------------------------------------------------------------------------------------|
+| Thyroid     | DDTI       | [Google Drive](https://drive.google.com/file/d/1wwlsEhwfSyvQsJBRjeDLhUjqZh8eaH2R/view)                        |
+|             | TN3K       | [GitHub (Zhihu Redirect)](https://link.zhihu.com/?target=https%3A//github.com/haifangong/TRFE-Net-for-thyroid-nodule-segmentation) |
+| Breast      | Dataset B  | [MMU Breast Ultrasound Dataset](https://helward.mmu.ac.uk/STAFF/m.yap/dataset.php)                           |
+|             | BUSI       | [Cairo University Page](https://scholar.cu.edu.eg/?q=afahmy/pages/dataset)                                   |
+| Cardiac     | CAMUS      | [Kaggle Dataset](https://www.kaggle.com/datasets/toygarr/camus-dataset?resource=download)                    |
+|             | HMC-QU     | [Baidu AI Studio](https://aistudio.baidu.com/datasetdetail/102406)                                            |
+| Fetal Head  | JNU-IFM    | [PS-FH-AOP 2023 Challenge](https://ps-fh-aop-2023.grand-challenge.org/)                                       |
+|             | HC18       | [HC18 Challenge](https://hc18.grand-challenge.org/)                                                           |
 ---
 
 ## ⚙️ Requirements
@@ -77,9 +87,8 @@ python test.py --checkpoint 'output/BUSI/SAM2-UNet-70.pth' --test_image_path 'da
 ```
 
 ## 📌 Citation
-If you find this repository useful, please cite our paper:
+If you find this repository useful, please cite our paper(bibtex):
 ```
-bibtex
 @ARTICLE{11129883,
   author={Luo, Xiling and Wang, Yi and Ou-Yang, Le},
   journal={IEEE Transactions on Medical Imaging}, 
