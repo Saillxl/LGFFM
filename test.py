@@ -8,7 +8,7 @@ from dataset import FullDataset
 from torch.utils.data import DataLoader
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--checkpoint", type=str, default='output/BUSI/SAM2-UNet-10.pth',
+parser.add_argument("--checkpoint", type=str, default='output/BUSI/LGFFM-10.pth',
                 help="path to the checkpoint of LGFFM")
 parser.add_argument("--test_image_path", type=str,
                     default='data/BUSI/all/img.yaml',
