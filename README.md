@@ -93,10 +93,10 @@ If you find this repository useful, please cite our paper(bibtex):
   author={Luo, Xiling and Wang, Yi and Ou-Yang, Le},
   journal={IEEE Transactions on Medical Imaging}, 
   title={LGFFM: A Localized and Globalized Frequency Fusion Model for Ultrasound Image Segmentation}, 
-  year={2025},
-  volume={},
-  number={},
-  pages={1-1},
+  year={2026},
+  volume={45},
+  number={2},
+  pages={515-527},
   keywords={Image segmentation;Ultrasonic imaging;Feature extraction;Frequency-domain analysis;Transformers;Training;Lesions;Data mining;Image edge detection;Faces;Neural network;ultrasound image segmentation;parallel bi-encoder;multi-domain fusion},
   doi={10.1109/TMI.2025.3600327}}
 ```
